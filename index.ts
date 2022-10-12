@@ -15,6 +15,10 @@ app.use(cors());
 //Routes
 app.use("/incident", incidentRouter);
 
+app.get("/", (req: Request, res: Response) => {
+  res.send("Welcome to the Enyata Api Team!");
+});
+
 app.listen(port, () => {
   console.log(`⚡️[server]: Server is running at https://localhost:${port}`);
 });

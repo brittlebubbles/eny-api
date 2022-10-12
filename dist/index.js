@@ -14,6 +14,9 @@ app.use(express_1.default.json());
 app.use((0, cors_1.default)());
 //Routes
 app.use("/incident", incidents_routes_1.default);
+app.get("/", (req, res) => {
+    res.send("Welcome to the Enyata Api Team!");
+});
 app.listen(port, () => {
     console.log(`⚡️[server]: Server is running at https://localhost:${port}`);
 });
