@@ -13,7 +13,7 @@ const app = (0, express_1.default)();
 app.use(express_1.default.json());
 app.use((0, cors_1.default)());
 //Routes
-app.use("/", incidents_routes_1.default);
+app.use("/incident", incidents_routes_1.default);
 app.listen(port, () => {
     console.log(`⚡️[server]: Server is running at https://localhost:${port}`);
 });

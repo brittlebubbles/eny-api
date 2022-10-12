@@ -13,7 +13,7 @@ app.use(express.json());
 app.use(cors());
 
 //Routes
-app.use("/", incidentRouter);
+app.use("/incident", incidentRouter);
 
 app.listen(port, () => {
   console.log(`⚡️[server]: Server is running at https://localhost:${port}`);
